@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Radio+Canada:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Radio Canada:wght@300;500&family=Radio+Canada:wght@300&display=swap');
+
+/* Zerando CSS */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* Fundo-tela */
+
+html {
+    width: 100vw;
+    height: 100vh;
+    font-size: 62.5%;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/images/img1.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+}
+
+/* Menu - Header - NavBar */
+
+header{
+    width: 100%;
+    height: 7vh;
+    background-color: rgba(22,22,22,0.2);
+    position: fixed;
+}
+
+.menu-content {
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.logo {
+    font-size: 1.8rem;
+    letter-spacing: 0.4rem;
+    cursor: pointer;
+}
+
+.logo a{ 
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.menu-content .list-itens a:before {
+    content: '';
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    width: 0px;
+    height: 1px;
+    background-color: white;
+    transition: all 1.5s;
+}
+
+.menu-content .list-itens a:hover:before {
+    width: 100%;
+}
+
+/* Centro - Conteudo Principal*/
+
+main{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Textos conteudo principal */
+
+.primary-text{
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.second-text{
+    margin-bottom: 7rem;
+    font-family: 'Radio Canada';
+    font-size: 2rem;
+}
+
+/* Botões*/
+
+.btns {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.btns a{
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+    
+}
+.btns button {
+    width: 250px;
+    height: 60px;
+    cursor: pointer;
+    border: 1px solid white;
+    color: white;
+    text-transform: uppercase;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: relative;
+    transition: 1.5s;
+}
+
+.btns button:hover {
+    color: rgb(255, 255, 255);
+    border: none;
+}
+
+.btns button:before {
+    content: ' ';
+    border-radius: 20px;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    width: 0;
+    height: 60px;
+    background-color: rgb(61, 61, 61);
+    z-index: -1;
+    transition: 1s;
+}
+
+.btns button:hover:before {
+    width: 100%;
+}
+
+/* Selection */
+
+.sec {
+    transition: all 0.4s;
+}
+
+#Sobremim{
+    width: 100vw;
+    height: 80vh;
+    font-size: 62.5%;
+    justify-content: center;
+
+    background-color: #202020;
+}
+
+#Portifolio{
+    width: 100vw;
+    height: 90vh;
+    font-size: 62.5%;
+    justify-content: center;
+
+    background-color: rgb(134, 127, 235);
+}
+
+#Contato{
+    width: 100vw;
+    height: 50vh;
+    font-size: 62.5%;
+    justify-content: center;
+    
+    background-color: #202020;
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(/images/img8.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-position-y: 0px;
+    background-repeat: no-repeat;
+} 
+
+/* Textos select*/
+
+
+.tertiary-text{
+    color:white;
+    margin:35px;
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 2rem;
+    text-align: left;
+
+}
+
+.quartenary-text{
+    color:white;
+    width: 1000px;
+    margin-bottom: 7rem;
+    font-family: 'Radio Canada';
+    font-size: 2rem;
+    align-items: center;
+}
+
+section{
+    height: 93vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+
+.sec {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FUNDO -  ARTICLE*/
+
+article{
+    width: 80vw;
+    height: 80vh;
+    font-size: 62.5%;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 90px;
+}
+
+/* IMAGEM */
+
+.img{
+  width: 30vw;
+  height: 30vw;
+  
+  border-radius: 5px;
+  padding: 0px;
+  margin: 0 40px 40px 0;
+  float: left;
+  align-items: center;
+}
+
+/* CABEÇALHO PORTIFÓLIO*/
+
+.quintet-text{
+    color:white;
+    margin: 90px;
+    width: 850px;
+    font-size: 5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/*ITENS POTIFÓLIO*/
+
+div.gallery {
+    width: auto;
+    height: auto;
+    cursor: pointer;
+    color: white;
+    background-color: transparent;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+    border-radius: 20px;
+    position: auto;
+    transition: 0.3s;
+    text-align:center;
+  
+    border: 1px solid #ffffff;
+}
+
+
+div.gallery:hover {
+  border: 1px solid #bdbdbd;
+  opacity: 0.7;
+}
+
+div.gallery img {
+  border-radius: 20px 20px 0px 0px;
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 10px;
+  text-align: center;
+}
+
+.responsive {
+  padding: 0 15px;
+  float: left;
+  width: 24.99999%;
+  align-items: center;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both; 
+}
+
+.sixth-text{
+    font-family: 'Radio Canada';
+    font-size: 2rem;   
+    color:white;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+/* CONTATO */
+
+sec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.seven-text{
+    color:rgb(134, 127, 235);
+    width: 100px;
+    font-size: 3rem;
+    text-align: left;
+}
+
+.eighth-text{
+    color:#d3d7cf;
+    width: 250px;
+    font-family: 'Radio Canada';
+    font-size: 2rem;
+    text-align: left;
+}
+
+.img2{
+  width: 10vw;
+  height: 10vw;
+  
+  border-radius: 0px 0px 0px 0px;
+  padding: 0px;
+  float: left;
+}
+
+/* RODAPÉ */
+
+.fote{
+  background-color: #202020;
+  width: 100vw;
+  height: 10vh;
+}
+
+/* Menu */
+
+.menu-content2 {
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.8rem;
+}
+
+.menu-content2 .list-itens{
+    display: flex;
+    list-style: none;
+    gap: 10px;
+}
+
+.menu-content2 .list-itens a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem;
+    transform: 2ms ease-in;
+    position: relative;
+}
+
+.logo2 {
+    font-size: 1.8rem;
+}
+.logo2 h1{ 
+    font-family: 'Oswald';
+    text-decoration: none;
+    color: white;
+    transform: 2ms ease-in;
+    position: relative;
+}
