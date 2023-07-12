@@ -205,7 +205,7 @@ main{
     justify-content: center;
     
     background-color: #202020;
-    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(./images/img8.jpg);
+    background: linear-gradient(rgba(17, 17, 17, 0.8), rgba(20, 20, 20, 1)), url(../images/img8.jpg);
     background-position: center center;
     background-size: cover;
     background-position-y: 0px;
